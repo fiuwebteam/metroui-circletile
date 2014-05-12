@@ -1,2 +1,12 @@
 /* PLUGIN CSS FILE */
 
+.tile.fiu-circle{
+	border-radius: 0%;
+	border: 0px solid #1c1c1c;
+}
+
+.tile.fiu-circle:hover{
+	border-radius: 60%;
+	border: 30px solid #1c1c1c; 
+}
+
