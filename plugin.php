@@ -8,7 +8,7 @@ include_once("settings.php");
 
 /*Do the things of our plugin */
 
-$tileTypes['TheTileName'] = array( /* Defaults*/
+$tileTypes['fiu-circle'] = array( /* Defaults*/
 	"group"=>0,
 	"x"=>0,
 	"y"=>0,
@@ -21,7 +21,7 @@ $tileTypes['TheTileName'] = array( /* Defaults*/
 	"labelPosition"=>$defaultLabelPosition,
 	"classes"=>"",
 );
-function tile_TheTileName($group,$x,$y,$width,$height,$background,$url,$labelText,$labelColor,$labelPosition,$classes){
+function tile_fiu-circle($group,$x,$y,$width,$height,$background,$url,$labelText,$labelColor,$labelPosition,$classes){
 	global $scale, $spacing, $scaleSpacing, $groupSpacing;
 	$marginTop = $y*$scaleSpacing+getMarginTop($group);
 	$marginLeft = $x*$scaleSpacing+getMarginLeft($group);
@@ -37,11 +37,7 @@ function tile_TheTileName($group,$x,$y,$width,$height,$background,$url,$labelTex
     
     <?php 
 	if($labelText!=""){
-		if($labelPosition=='top'){
-			echo "<div class='tileLabelWrapper top' style='border-top-color:".$labelColor.";'><div class='tileLabel top' >".$labelText."</div></div>";
-		}else{
-			echo "<div class='tileLabelWrapper bottom'><div class='tileLabel bottom' style='border-bottom-color:".$labelColor.";'>".$labelText."</div></div>";
-		}
+		echo "<div class='tileLabelWrapper bottom'><div class='tileLabel bottom' style='border-bottom-color:".$labelColor.";'>".$labelText."</div></div>";
 	}
 	?> 
     </a>
