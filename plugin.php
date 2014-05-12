@@ -21,7 +21,7 @@ $tileTypes['fiu-circle'] = array( /* Defaults*/
 	"labelPosition"=>$defaultLabelPosition,
 	"classes"=>"",
 );
-function tile_fiu-circle($group,$x,$y,$width,$url,$labelText,$labelColor,$classes){
+function tile_fiu-circle($group,$x,$y,$width,$url,$labelText,$labelColor,$classes,$img,$imgAlt,$imgTitle){
 	global $scale, $spacing, $scaleSpacing, $groupSpacing;
 	$marginTop = $y*$scaleSpacing+getMarginTop($group);
 	$marginLeft = $x*$scaleSpacing+getMarginLeft($group);
@@ -33,7 +33,7 @@ function tile_fiu-circle($group,$x,$y,$width,$url,$labelText,$labelColor,$classe
 	width:<?php echo $tileWidth?>px; height:<?php echo $tileHeight?>px;
 	background:<?php echo $background;?>;" <?php posVal($marginTop,$marginLeft,$tileWidth);?>> 
     
-    
+		  <img src="<?php echo $img; ?>" alt="<?php echo $imgAlt; ?>" title="<?php echo $imgTitle; ?>" /> 
     
     <?php 
 	if($labelText!=""){
