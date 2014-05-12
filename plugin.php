@@ -21,14 +21,14 @@ $tileTypes['fiu-circle'] = array( /* Defaults*/
 	"labelPosition"=>$defaultLabelPosition,
 	"classes"=>"",
 );
-function tile_fiu-circle($group,$x,$y,$width,$height,$background,$url,$labelText,$labelColor,$labelPosition,$classes){
+function tile_fiu-circle($group,$x,$y,$width,$url,$labelText,$labelColor,$classes){
 	global $scale, $spacing, $scaleSpacing, $groupSpacing;
 	$marginTop = $y*$scaleSpacing+getMarginTop($group);
 	$marginLeft = $x*$scaleSpacing+getMarginLeft($group);
 	$tileWidth = $width*$scaleSpacing-$spacing;
-	$tileHeight = $height*$scaleSpacing-$spacing;
+	$tileHeight = $width*$scaleSpacing-$spacing;
 	?>
-  	<a <?php echo makeLink($url);?> class="tile group<?php echo $group?> <?php echo $classes?>" style="
+  	<a <?php echo makeLink($url);?> class="tile fiu-circle group<?php echo $group?> <?php echo $classes?>" style="
     margin-top:<?php echo $marginTop?>px; margin-left:<?php echo $marginLeft?>px;
 	width:<?php echo $tileWidth?>px; height:<?php echo $tileHeight?>px;
 	background:<?php echo $background;?>;" <?php posVal($marginTop,$marginLeft,$tileWidth);?>> 
@@ -37,7 +37,7 @@ function tile_fiu-circle($group,$x,$y,$width,$height,$background,$url,$labelText
     
     <?php 
 	if($labelText!=""){
-		echo "<div class='tileLabelWrapper bottom'><div class='tileLabel bottom' style='border-bottom-color:".$labelColor.";'>".$labelText."</div></div>";
+		echo "<div class='tileLabelWrapper'><div class='tileLabel'>".$labelText."</div></div>";
 	}
 	?> 
     </a>
