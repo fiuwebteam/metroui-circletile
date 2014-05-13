@@ -42,7 +42,16 @@ function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$labelColor,$classes
 		  ">
 		  <?php 
 		  if($labelText!=""){
-					 echo "<div class='fiu-tileLabelWrapper'><div class='fiu-tileLabel'>".$labelText."</div></div>";
+?>
+        <div class="fiu-tileLabelWrapper"
+            style"
+                background: <?php echo $labelColor; ?>;
+            ">
+            <div class="fiu-tileLabel">
+                <?php echo $labelText; ?>
+            </div>
+        </div>
+<?php
 		  }
 		  ?> 
 	</span>
