@@ -11,12 +11,12 @@ $tileTypes['fiucircle'] = array( /* Defaults*/
 	"x"=>0,
 	"y"=>0,
 	'width'=>1,
-	"background"=>$defaultBackgroundColor,
 	"url"=>"",
 	"labelText"=>"",
 	"classes"=>""
+	"img"=>""
 );
-function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img,$imgAlt,$imgTitle){
+function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img){
 	global $scale, $spacing, $scaleSpacing, $groupSpacing;
 	$marginTop = $y*$scaleSpacing+getMarginTop($group);
 	$marginLeft = $x*$scaleSpacing+getMarginLeft($group);
