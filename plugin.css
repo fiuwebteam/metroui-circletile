@@ -26,18 +26,35 @@
 }
 
 .fiu-circle .fiu-tileLabelWrapper{
-	background: #1c1c1c;
-	border-radius: 50%;
-	/*overflow: hidden;*/
-	-moz-transition: all .2s ease-out;
-	-webkit-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	transition: all .2s ease-out;
-	-ms-transform: scale(0,0);
-	-webkit-transform: scale(0,0);
-	-moz-transform: scale(0,0);
-	-o-transform: scale(0,0);
-	transform: scale(0,0);
+    background: #1c1c1c;
+    border-radius: 50%;
+    /*overflow: hidden;*/
+    -moz-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    -ms-transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+    -moz-transform: scale(0,0);
+    -o-transform: scale(0,0);
+    transform: scale(0,0);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    margin: -75px auto 0 auto;
+    color: #efdcd3;
+    text-align: center;
+    font-size: 1em;
+    display: table;
+    font-family: 'futura-pt', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    width: 150px;
+    height: 150px;
 }
 
 .fiu-circle:hover .fiu-tileLabelWrapper{
