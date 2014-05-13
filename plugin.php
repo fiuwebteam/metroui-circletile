@@ -11,12 +11,10 @@ $tileTypes['fiucircle'] = array( /* Defaults*/
 	"x"=>0,
 	"y"=>0,
 	'width'=>1,
+	"background"=>$defaultBackgroundColor,
 	"url"=>"",
 	"labelText"=>"",
-	"classes"=>"",
-    "img"=>"",
-    "imgAlt"=>"",
-    "imgTitle"=>"",
+	"classes"=>""
 );
 function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img,$imgAlt,$imgTitle){
 	global $scale, $spacing, $scaleSpacing, $groupSpacing;
@@ -28,7 +26,8 @@ function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img,$imgAl
   	<a <?php echo makeLink($url);?> class="tile fiu-circle group<?php echo $group; ?> <?php echo $classes; ?>" style="
     margin-top:<?php echo $marginTop; ?>px; margin-left:<?php echo $marginLeft; ?>px;
 	width:<?php echo $tileWidth; ?>px; height:<?php echo $tileHeight; ?>px;
-	background-image:url('<?php echo $img; ?>');" <?php posVal($marginTop,$marginLeft,$tileWidth);?>> 
+	" <?php posVal($marginTop,$marginLeft,$tileWidth);?>> 
+<div class="fiu-circle" style="background-image:url('<?php echo $img; ?>');width: 100%; height: 100%;"/>
     
     
     <?php 
