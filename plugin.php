@@ -38,16 +38,15 @@ function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img,$backg
 		  style="
 			background-image:url('<?php echo $img; ?>');
 		   border-color: <?php echo $background; ?>;
-		  "/>
+		  ">
+		  <?php 
+		  if($labelText!=""){
+					 echo "<div class='fiu-tileLabelWrapper'><div class='fiu-tileLabel'>".$labelText."</div></div>";
+		  }
+		  ?> 
+	</span>
 	</a>
     
-    <?php 
-	/*
-	if($labelText!=""){
-		echo "<div class='tileLabelWrapper'><div class='tileLabel'>".$labelText."</div></div>";
-	}
-	 */
-	?> 
 <?php
 }//end tile_fiucircle
 ?>
