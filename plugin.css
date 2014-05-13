@@ -26,7 +26,6 @@
 }
 
 .fiu-circle .fiu-tileLabelWrapper{
-    background: #1c1c1c;
     border-radius: 50%;
     /*overflow: hidden;*/
     -moz-transition: all .2s ease-out;
