@@ -44,7 +44,7 @@ function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$labelColor,$classes
 		  if($labelText!=""){
 ?>
         <div class="fiu-tileLabelWrapper"
-            style"
+            style="
                 background: <?php echo $labelColor; ?>;
             ">
             <div class="fiu-tileLabel">
