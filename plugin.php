@@ -13,7 +13,7 @@ $tileTypes['fiucircle'] = array( /* Defaults*/
 	'width'=>1,
 	"url"=>"",
 	"labelText"=>"",
-	"classes"=>""
+	"classes"=>"",
 	"img"=>""
 );
 function tile_fiucircle($group,$x,$y,$width,$url,$labelText,$classes,$img){
